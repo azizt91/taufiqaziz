@@ -163,7 +163,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
                 Download CV
               </a>
               <a
-                href={`https://wa.me/${profile?.whatsappNumber ?? "6281941700701"}`}
+                href={`https://wa.me/${profile?.whatsappNumber ?? "6281914170701"}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline text-sm sm:text-base"

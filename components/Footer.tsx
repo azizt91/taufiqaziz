@@ -10,7 +10,7 @@ interface FooterProps {
 
 export default function Footer({ profile }: FooterProps) {
   const currentYear = new Date().getFullYear();
-  const whatsapp = profile?.whatsappNumber ?? "6281941700701";
+  const whatsapp = profile?.whatsappNumber ?? "6281914170701";
   const email = profile?.email ?? "azizt91@gmail.com";
   const location = profile?.location ?? "Tegal, Jawa Tengah";
 

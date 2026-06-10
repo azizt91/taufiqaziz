@@ -6,7 +6,7 @@ interface WhatsAppFloatProps {
 }
 
 export default function WhatsAppFloat({
-  phoneNumber = "6281941700701",
+  phoneNumber = "6281914170701",
   message = "Halo Taufiq, saya tertarik untuk bekerja sama!",
 }: WhatsAppFloatProps) {
   const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

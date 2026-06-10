@@ -41,7 +41,7 @@ export default async function HomePage() {
       <CertificationsSection certifications={certifications} />
       <ServicesSection services={services} />
       <Footer profile={profile} />
-      <WhatsAppFloat phoneNumber={profile?.whatsappNumber ?? "6281941700701"} />
+      <WhatsAppFloat phoneNumber={profile?.whatsappNumber ?? "6281914170701"} />
     </main>
   );
 }
