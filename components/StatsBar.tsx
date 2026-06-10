@@ -96,10 +96,11 @@ function AnimatedCounter({
 
 // Dynamic Lucide icon renderer
 function DynamicIcon({ name, className }: { name: string; className?: string }) {
-  const Icon = (LucideIcons as Record<string, React.ComponentType<{ className?: string }>>)[name];
+  const Icon = (LucideIcons as any)[name];
   if (!Icon) return <LucideIcons.Star className={className} />;
   return <Icon className={className} />;
 }
+
 
 export default function StatsBar({ stats }: StatsBarProps) {
   const displayStats = stats.length > 0 ? stats : defaultStats;

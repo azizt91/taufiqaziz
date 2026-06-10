@@ -36,10 +36,11 @@ const defaultServices: Service[] = [
 ];
 
 function DynamicIcon({ name, className }: { name: string; className?: string }) {
-  const Icon = (LucideIcons as Record<string, React.ComponentType<{ className?: string }>>)[name];
+  const Icon = (LucideIcons as any)[name];
   if (!Icon) return <Store className={className} />;
   return <Icon className={className} />;
 }
+
 
 export default function ServicesSection({ services }: ServicesSectionProps) {
   const displayServices = services.length > 0 ? services : defaultServices;
